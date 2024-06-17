@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const toggleAdvancedSearch = on => {
         if (on) {
-            advSearchDiv.style.maxHeight = "70px";
+            advSearchDiv.style.maxHeight = advSearchDiv.scrollHeight + "px";
         } else {
-            advSearchDiv.style.maxHeight = "0px";
+            advSearchDiv.style.maxHeight = null;
         }
         localStorage.advSearchToggled = on;
     }
